@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+
+.main.container{
+    background-image: url('../assets/page1/bg.jpg');
+    display: flex;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 5%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
+.logo {
+    font-size: 2em;
+    pointer-events: none;
+    color: #359381;
+}
+
+
+
+.navigation a {
+    text-decoration: none;
+    color: #359381;
+    padding: 6px 10px; /* Adjust padding based on screen size */
+    border-radius: 20px;
+    margin: 0 5px;
+    font-weight: 600;
+    font-size: 0.9em; /* Adjust font size based on screen size */
+}
+
+
+
+
+.navigation a:hover,
+.navigation a.active:hover {
+    background: #359381;
+    color: white;
+}
+
+.parallax {
+    position: absolute; /* Change to absolute */
+    top: 0; /* Add top position */
+    left: 0; /* Add left position */
+    width: 100%; /* Make it full width */
+    height: 100%; /* Make it full height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    
+    position: absolute;
+    font-size: 3em;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px;
+}
+#textname{
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    top:55%;
+    position: absolute;
+    font-size: 3em;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px;
+}
+
+.parallax img {
+    position: absolute;
+    pointer-events: none;
+}
+
+#picbg {
+    position: absolute;
+    width: fit-content;
+    left: 0;
+    bottom: 0;
+    height: 100vw;
+}
+
+#pic1 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    height: auto;
+}
+
+#pic3{
+    right: 13%;
+}
+
+.sec {
+    /* Change to absolute */
+    bottom: 0; /* Add bottom position */
+    left: 0; /* Add left position */
+    width: 100%; /* Make it full width */
+    background: #000000;
+    padding: 100px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .navigation a {
+        font-size: 0.6em; /* Decreased font size for mobile devices */
+    }
+    .logo{
+        font-size: 1em;
+    }
+}

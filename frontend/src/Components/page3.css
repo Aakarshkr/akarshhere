@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .first-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .second-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #d3d3d3;
+  }
+  
+  h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.5em;
+    color: #666;
+  }
+
+  .first-section,
+.second-section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+  z-index: -100;
+}
+
+
+
+.logos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust the height as needed */
+  }
+  
+  .logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow logos to wrap to the next line if needed */
+  }
+  
+  .logos img {
+    width: 100px; /* Adjust the width of the logos as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px; /* Adjust margin between logos as needed */
+  }
+  
